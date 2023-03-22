@@ -1,2 +1,2 @@
-npm_modules
-.DS_Strore
+npm_modules/
+*.DS_Strore
