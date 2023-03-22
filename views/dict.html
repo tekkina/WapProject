@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WAP Online Dictionary</title>
+
+    <link href="./style/dict.css" type="text/css" rel="stylesheet">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/dict.js"></script>
+
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>WAP Online Dictionary: Search our English Dictionary</h1>
+        <div id="overlay">
+            <div class="cv-spinner">
+                <span class="spinner"></span>
+            </div>
+        </div>
+
+        <input type="text" id="search" class="search-query mac-style" placeholder="Write down your word and click Enter">
+        <button type="submit" id="btn">Lookup</button>
+
+        <hr/>
+        <span id="errors" class="label label-error card-error"></span>
+        <div id="tableNotation">
+            <span class="label label-info">Search for: <span id="searchWord"></span></span>
+            <span class="label label-info">Number of results: <span id="nResults"></span></span>
+            <button id="showAll" href="#showAll">Show All...</button>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr class="active">
+                        <th>#</th>
+                        <th>Word</th>
+                        <th>Type</th>
+                        <th>Definition</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+  
+        <div id ="validation">
+            <a href="https://validator.w3.org/check?uri=https://tekkina.github.io/WapProject/DICTIONARY/views/dict.html">
+                <img  src="./public/images/validators/w3c-html.png" alt= "html validator">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://tekkina.github.io/WapProject/DICTIONARY/views/style/dict.css"">
+                <img  src="./public/images/validators/w3c-css.png"  alt="css validator">
+            </a>
+            <a href="#">
+                <img src="./public/images/validators/jshint-small.png" alt="JavaScript Lint">
+            </a>
+        </div>
+        <div class="viewGapper"></div>
+ 
+    <footer>
+        <div>
+            <div class="beginfooter">
+                <p> prepared by: Tekeste T.</p>
+                <p>Course: WAP(CS472)</p>
+            </div>
+            <div class="midfooter">
+                <p>server side with express</p>
+                <p>refer @ express.js</p>
+            </div>
+            <div class="endfooter">
+                <p>March, 2023</p>
+                <p>MIU,Fairfield</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

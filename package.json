@@ -1,0 +1,19 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "description": "\"this is an online dictionary, it demonstrates portion of the knowledge we taught in WAP course\"",
+  "main": "Dictionary.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"tekeste Teklehaimanot\"",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "joi": "^17.9.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.21"
+  }
+}
