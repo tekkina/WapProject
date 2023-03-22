@@ -15,5 +15,13 @@
     "joi": "^17.9.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tekkina/WapProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tekkina/WapProject/issues"
+  },
+  "homepage": "https://github.com/tekkina/WapProject#readme"
 }
