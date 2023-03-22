@@ -13,11 +13,16 @@ h1{ margin-top:0;
     font-weight:400;
     padding:2vh;
     background-color: rgb(248, 236, 221);
+    box-shadow:0 0 100vh blue;
 }
 .container{
     margin-top:0;
     padding-top:1vh;
     
+}
+.active{
+    background-color: rgb(248, 236, 221);
+    box-shadow:0 0 100vh red;
 }
 #overlay {
     position: fixed;

@@ -1,22 +1,18 @@
-// Node.js program to lookup the term in the database, collect the meanings, and send JSON to Browser
+
 const express = require('express');
-const router = express.Router(); // Express Router
+const router = express.Router(); 
 
 const Joi = require('joi'); // // Validation using joi
 
 const mysql = require('mysql');
 
-// connection.connect(err => {
-//     if (err) return debug('error connecting: ' + err.stack);
-//     debug('connected as id ' + connection.threadId);
-// });
 
-router.use(express.json()); //Built in middleware enabling parsing of JSON in  express
+router.use(express.json()); 
 
 router.get('/:word', (req, res) => {
 
     const { error } = validateWord(req.params); // Object destructuring -- result.error
-    if (error) return res.status(400).send(error.details[0].message); // 400 Bad Request
+    if (error) return res.status(400).send(error.details[0].message); 
 
     var connection = mysql.createConnection({
   host: "localhost",
@@ -34,7 +30,7 @@ router.get('/:word', (req, res) => {
         });
     });
 
-}); // app.get();
+}); 
 
 router.get('/:word/:k', (req, res) => {
 
@@ -57,10 +53,9 @@ router.get('/:word/:k', (req, res) => {
         });
     });
 
-}); // app.get();
+}); 
 
 function validateWord(word) {
-    // validation error: // joi validation
     const schema = Joi.object({ word: Joi.string().min(1).required(), k: Joi.number() });
     return schema.validate(word);
 }
